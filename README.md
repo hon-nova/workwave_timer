@@ -1,4 +1,4 @@
-# Student Clock
+# WorkWave Timer
 
 ## 1. Intro.
 
