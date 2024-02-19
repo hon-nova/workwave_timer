@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>25 +5 CLOCK</title>
+    <link rel="stylesheet" href="clock.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="left"></div>
+      <div class="central">        
+        <div class="top">
+          <div class="break-label">           
+            <p id="break-label">Break Length</p>
+            <div class="break-left">
+              <button id="break-decrement" onclick="onDecreaseBreak()"><span class="material-symbols-outlined">
+               arrow_downward_alt
+               </span></button>    
+              <p id="break-length">5</p>
+
+              <button id="break-increment" onclick="onIncreaseBreak()"><span class="material-symbols-outlined">
+               arrow_upward
+               </span></button>
+            </div>
+           
+          </div>
+          <div class="session-label">
+          
+            <p id="session-label">Session</p>
+            <div class="session-right">
+              <button id="session-decrement" onclick="onDecrease()"><span class="material-symbols-outlined">
+               arrow_downward_alt
+               </span></button>           
+
+              <p id="session-length">25</p>
+              
+              <button id="session-increment" onclick="onIncrease()"><span class="material-symbols-outlined">
+               arrow_upward
+               </span></button>
+            </div>
+          </div>
+        </div>
+        <div class="timer"> 
+          <p id="timer-label">Session</p>         
+          <div>
+           
+            <div id="time-left"></div>           
+           
+            <audio controls style="display: none" class="" id="beep">
+              <source src="audio/beep.mp3" type="audio/mp3" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>         
+        </div>
+        <div class="bottom"> 
+         
+         <button id="start_stop" onclick="startCountDown()"><span class="material-symbols-outlined">
+            play_circle
+            </span></button>
+            <button style="display:none" id="pause"><span class="material-symbols-outlined">
+               pause_circle
+               </span></button>
+         
+         <button id="reset" onclick="onReset()"><span class="material-symbols-outlined">
+            reset_wrench
+            </span></button>
+       </div>
+      </div>
+      <div class="right"></div>
+    </div>
+    <script src="clock.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: rgb(21, 143, 187);
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.central {
+  border: 10px solid black;
+  width: 500px;
+  margin: 150px auto;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.break-left, .session-right {
+  display: flex;
+  margin: 10px auto;
+  align-items: center;
+}
+
+#session-label, #break-label {
+  text-align: center;
+}
+
+.timer {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+#time-left {
+  width: 200px;
+  height: 50px;
+  font-size: 40px;
+  background-color: rgb(176, 172, 172);
+  margin: auto;
+  border: 2px solid #d0d0d5;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+button {
+  cursor: pointer;
+  margin: 10px;
+  background-color: skyblue;
+  width: 60px;
+  height: 60px;
+  border-color: #d0d0d5;
+}
+
+/*# sourceMappingURL=clock.css.map */
